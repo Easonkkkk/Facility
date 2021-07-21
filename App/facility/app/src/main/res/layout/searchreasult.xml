@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background7">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp">
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:src="@drawable/returnback"
+            android:layout_gravity="center"
+            android:gravity="left"/>
+        <TextView
+            android:layout_marginLeft="-50sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="搜索设备"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="10sp"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:background="@drawable/search_shape"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="10dp"
+            android:hint="齐心加厚订书机"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColorHint="#000000"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="66dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_style8"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="381dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110sp"
+                android:layout_marginLeft="5sp"
+                android:background="@drawable/button_style"
+                android:orientation="horizontal">
+
+                //文字
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/mache2"
+                    android:foregroundGravity="center"
+                    android:onClick="click"
+                    tools:ignore="OnClick" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-15sp"
+                    android:orientation="vertical">
+
+                    //标题文字
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="159dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="齐心加厚订书机"
+                                android:textColor="#E95C5C"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="48sp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style10"
+                                android:text="空闲中"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="设备位置:10-19-3"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="已被借用次数:57次 "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/button_style9"
+                            android:text="   常规设备"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    //详情图标
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  距离150m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_style"
+                android:orientation="horizontal">
+
+                //文字
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/mache5"
+                    android:foregroundGravity="center" />
+
+                <LinearLayout
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-15sp"
+                    android:orientation="vertical">
+
+                    //标题文字
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="213dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="手握式省力"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="订书机"
+                                android:textColor="#E95C5C"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style10"
+                                android:text="空闲中"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="设备位置:11-21-4"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已被借用次数:106次 "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/button_style9"
+                            android:text="   常规设备"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    //详情图标
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  距离317m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:layout_height="110sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_style"
+                android:orientation="horizontal">
+
+                //文字
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/mache6"
+                    android:foregroundGravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-15sp"
+                    android:orientation="vertical">
+
+                    //标题文字
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="办公式"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="订书机"
+                                android:textColor="#E95C5C"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style11"
+                                android:text="使用中"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+
+                            android:text="设备位置:12-1-7"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+                            android:text="已被借用次数:219次 "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/button_style9"
+                            android:text="   常规设备"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    //详情图标
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  距离952m" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:layout_height="110sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_style"
+                android:orientation="horizontal">
+
+                //文字
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/mache8"
+                    android:foregroundGravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-15sp"
+                    android:orientation="vertical">
+
+                    //标题文字
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="大型办公"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="79dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="订书机"
+                                android:textColor="#E95C5C"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style11"
+                                android:text="使用中"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+
+                            android:text="设备位置:13-3-9"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+                            android:text="已被借用次数:42次 "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/button_style9"
+                            android:text="   常规设备"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    //详情图标
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  距离1582m" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="352dp"
+                android:layout_height="110sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_style"
+                android:orientation="horizontal">
+
+                //文字
+
+                <ImageView
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:background="@drawable/mache9"
+                    android:foregroundGravity="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-15sp"
+                    android:orientation="vertical">
+
+                    //标题文字
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20sp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="省力式"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="订书机"
+                                android:textColor="#E95C5C"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_style11"
+                                android:text="使用中"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+
+                            android:text="设备位置:15-9-13"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+                            android:text="已被借用次数:36次 "
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="82dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3sp"
+                            android:background="@drawable/button_style9"
+                            android:text="   常规设备"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+                    //详情图标
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="  距离2843m" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

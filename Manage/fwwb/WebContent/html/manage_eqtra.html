@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-Equiv="Cache-Control" Content="no-cache" />
+	<meta http-Equiv="Pragma" Content="no-cache" />
+	<meta http-Equiv="Expires" Content="0" />
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/manage.css">
+	<link rel="stylesheet" type="text/css" href="../css/manage_eqtra.css">
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	
+</head>
+<body>
+	<div class="front" style="background:white;height: 100%;width: 98%;">
+		<div class="head head1">
+
+			<div class="time start_time">
+				<p>开始时间</p>
+				<input type="datetime-local" value="2021-01-10T14:00:00">
+			</div>
+			<div class="time end_time">
+				<p>结束时间</p>
+				<input type="datetime-local" value="2021-01-17T18:00:00">
+			</div>
+		</div>
+		<div class="head head2" style="margin-left:5.5%;">
+			<div class="time equip_id">
+				<p style="margin-right:10%;">设备编号</p>
+				<input type="text" value="" >
+			</div>
+			<input type="button" class="btn btn-primary btn-sm btn_search" value="查看历史轨迹" onclick="view();" style="margin-left:15%;">
+			
+		</div>
+			  <table class="tb" id="tb" name="tb" style="display:none;">
+	    <tr class="tr">
+	      <td class="ckbox"></td>
+	      <td>编号</td>
+	      <td>名称</td>
+	      <td>起始时间</td>
+	      <td>结束时间</td>
+	      <td>检测设备</td>
+	      <td>点位信息</td>
+	      <td>借出状态</td>
+	      <td>异常状态</td>
+	    </tr>
+	    <tr class="tr">
+	      <td class="ckbox"><input type="checkbox" name="selected" value="yes"></td>
+	      <td>1096</td>
+	      <td class="eqname">高精度电流互感器</td>
+	      <td>2021-01-10 14:00</td>
+	      <td>2021-01-10 16:00</td>
+	      <td>RS232_025</td>
+	      <td>4#205</td>
+	      <td>未出库</td>
+	      <td>正常</td>
+	    </tr>
+	    <tr class="tr">
+	      <td class="ckbox"><input type="checkbox" name="selected" value="yes"></td>
+	      <td>1096</td>
+	      <td class="eqname">高精度电流互感器</td>
+	      <td>2021-01-10 16:00</td>
+	      <td>2021-01-17 10:00</td>
+	      <td>RS232_026</td>
+	      <td>4#206</td>
+	      <td>未出库</td>
+	      <td>正常</td>
+	    </tr>
+	    <tr class="tr">
+	      <td class="ckbox"><input type="checkbox" name="selected" value="yes"></td>
+	      <td>1096</td>
+	      <td class="eqname">高精度电流互感器</td>
+	      <td class="time_check">2021-01-17 10:00</td>
+	      <td class="time_check">2021-01-17 18:00</td>
+	      <td>RS232_027</td>
+	      <td>4#207</td>
+	      <td>未出库</td>
+	      <td>正常</td>
+	    </tr>
+	    <tr class="tr">
+	      <td class="ckbox"><input type="checkbox" name="selected" value="yes"></td>
+	      <td>1096</td>
+	      <td class="eqname">高精度电流互感器</td>
+	      <td class="time_check">2021-01-17 10:00</td>
+	      <td class="time_check">2021-01-18 10:00</td>
+	      <td>RS232_028</td>
+	      <td>4#208</td>
+	      <td>未出库</td>
+	      <td>正常</td>
+	    </tr>
+	    <tr class="tr">
+	      <td class="ckbox"><input type="checkbox" name="selected" value="yes"></td>
+	      <td>1096</td>
+	      <td class="eqname">高精度电流互感器</td>
+	      <td class="time_check">2021-01-18 10:00</td>
+	      <td class="time_check">2021-01-18 18:00</td>
+	      <td>RS232_028</td>
+	      <td>4#208</td>
+	      <td>未出库</td>
+	      <td>正常</td>
+	    </tr>
+	    
+	  </table>
+
+	</div>
+</body>
+<script>
+$('#tb').css('display','none');
+function view(){
+	console.log(window.document.getElementById("tb").style.dispaly);
+	$('#tb').css('display','block');
+}
+</script>
+<script src="../bootstrap/js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</html>

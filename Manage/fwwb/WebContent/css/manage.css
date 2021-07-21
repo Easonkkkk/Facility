@@ -1,0 +1,71 @@
+.front{
+	margin: 1% 1% 0% 1%;
+}
+
+.tb {
+	margin: 1% 2% 1% 2%;
+	width: 96%;
+}
+
+.tr {
+	font-size: 150%;
+	text-align: center;
+	line-height: 280%;
+	border-bottom: solid rgb(135,125,125) 2px;	
+}
+
+td {
+	width: 8%;
+}
+
+input[type=checkbox] {
+	transform: scale(2, 2);
+}
+
+.ckbox {
+	padding-left: 2%;
+	width: 1%;
+}
+
+.eqname{
+	width: 12%;
+}
+
+.filter {
+	padding: 1% 0% 0% 5%;
+	font-size: 120%;
+}
+
+.filter input[type=text] {
+	margin: 0% 0% 0% 3%;
+	width: 10%;
+	height: 10%;
+}
+
+.eqadd_tb {
+	font-weight: bold;
+	font-size: 200%;
+	table-layout: fixed;
+	margin: 1% 5% 0% 5%;
+}	
+
+.eqadd_tb td:nth-child(2n+1) {
+	line-height: 200%;
+}
+
+.eqadd_tb td:nth-child(2n+0) {
+	font-weight: normal;
+	font-size: 80%;
+}
+
+.eqadd_tb select {
+	width: 70%;
+}
+
+.modal-dialog{
+	background-color: white;
+	width: 100%;
+}
+.time_check{
+	width:12%;
+}

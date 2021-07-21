@@ -1,0 +1,194 @@
+li.active {
+	padding: 18px 0 50px 10px;
+}
+
+li {
+	padding: 10px  0 0 -10px;
+}
+
+.nav_a {
+    font-family: 榛戜綋;
+    color: #fff;
+    font-size: 120%;
+}
+
+.more {
+    color: #000;
+}
+
+.container{
+	height: 100%;
+	background: #0C1D3F;
+	
+}
+
+img.imag1{
+	width:20%; 
+	margin: 0 5px;
+}
+
+img.imag2{
+	width:14%; 
+	margin: 0 18px 4px 10px;
+}
+
+.block2{
+	display: flex;
+	flex-direction: row;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn:visited {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-sm {
+	margin-left: 1%;
+}
+
+img.imag3 {
+    /*float: right;*/
+    width: 20%;
+    padding: 1%;
+}
+
+img.imag4 {
+    /*float: right;*/
+    width: 20%;
+    padding: 1%;
+}
+
+.left1{
+	/*margin-left: 60%;*/
+/*float: left;*/
+}
+
+.dropdown-toggle {
+	display: inline-block;
+    float: right;
+    font-size: 30px;
+    margin: 0.5% 0 0 0;
+}
+
+.bottom {
+    width: 81%;
+    float: right;
+    height: auto;
+}
+
+.navbar-brand{
+	width: 83%;
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
+.between{
+   display: flex;
+   margin: 1% 0 1% 1%;
+    width: 98%;
+}
+
+.front{
+	display: flex;
+	margin: 1% 1% 0% 1%;
+}
+
+.fronta {
+    display: flex;
+}
+
+h3 {
+    margin: 10% 0 0 0;
+}
+
+.bottomleft{
+     margin: 1% 1% 1% 1%;
+}
+
+.bottomright{
+     margin: 1% 1%  1%;
+}
+
+.bottom{
+    display: flex;
+      /*flex: 1 1 auto;*/
+  	flex-direction: row;
+  
+}
+
+.title {
+	margin-top: -17%;
+    width: 20%;
+    font-weight: bold;
+}
+
+.imgs {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: -25%;
+}
+
+.num {
+	font-size: 50px;
+    font-weight: bold;
+}
+
+.front_h3 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 12%;
+	font-size: 35px;
+}
+
+.bottomlefttop {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 2% 4% 0% 4%;
+}
+
+.bottomrighttop {
+	font-size: 17px; 
+	margin: 2% 4% 0% 4%; 
+	font-weight: bold;
+}
+
+.num {
+	color: #DC143C;
+}
+
+.bad {
+	font-size: 25px;
+	font-weight: bold;
+	color: red;
+
+}
+
+.notice {
+	margin: 1% 2% 1% 2%;
+	width: 96%;
+	font-size: 150%;
+	table-layout:fixed;
+}
+
+tr {
+	text-align: center;
+	line-height: 350%;
+	border-bottom: solid rgb(135,125,125) 2px;	
+}
+
+.notice_content {
+	width: 70%;
+	word-break:keep-all;/* 涓嶆崲琛� */
+    white-space:nowrap;/* 涓嶆崲琛� */
+    overflow:hidden;/* 鍐呭瓒呭嚭瀹藉害鏃堕殣钘忚秴鍑洪儴鍒嗙殑鍐呭 */
+    text-overflow:ellipsis;
+}

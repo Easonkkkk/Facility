@@ -1,0 +1,32 @@
+.front{
+	margin: 1% 1% 0% 1%;
+}
+
+.tb {
+	margin: 1% 2% 1% 2%;
+	width: 96%;
+
+}
+
+.tr {
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 3em;
+	border-bottom: solid rgb(135,125,125) 2px;	
+}
+
+td {
+	width: 4%;
+}
+
+.eqname{
+	width: 8%;
+}
+
+.warn {
+	width: 15%;
+}
+
+.time {
+	width: 6%;
+}

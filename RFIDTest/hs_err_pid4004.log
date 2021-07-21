@@ -1,0 +1,261 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_STACK_OVERFLOW (0xc00000fd) at pc=0x680b8897, pid=4004, tid=4388
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_20-b26) (build 1.8.0_20-b26)
+# Java VM: Java HotSpot(TM) Client VM (25.20-b23 mixed mode, sharing windows-x86 )
+# Problematic frame:
+# C  [Basic188.dll+0x18897]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00edc800):  JavaThread "main" [_thread_in_native, id=4388, stack(0x02a80000,0x02ad0000)]
+
+siginfo: ExceptionCode=0xc00000fd, ExceptionInformation=0x00000000 0x02a80000 
+
+Registers:
+EAX=0x02a80000, EBX=0x00000000, ECX=0x02a67210, EDX=0x00000007
+ESP=0x02aa5d98, EBP=0x02aa5da0, ESI=0x00000000, EDI=0x02acfae8
+EIP=0x680b8897, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x02aa5d98)
+0x02aa5d98:   884b7e56 680a3210 00000000 680a3a7a
+0x02aa5da8:   681a95d0 681295cc 00000000 02ac5e20
+0x02aa5db8:   02acfae8 158b63e0 00000000 00000000
+0x02aa5dc8:   00000000 00000000 00000000 00000000
+0x02aa5dd8:   00000000 00000000 02acdb80 02acdb84
+0x02aa5de8:   02acdb88 00000000 00000000 00000000
+0x02aa5df8:   00000000 00000000 00000000 00000000
+0x02aa5e08:   00000000 00000000 00000000 00000000 
+
+Instructions: (pc=0x680b8897)
+0x680b8877:   1b c0 f7 d0 23 c8 8b c4 25 00 f0 ff ff 3b c8 72
+0x680b8887:   0a 8b c1 59 94 8b 00 89 04 24 c3 2d 00 10 00 00
+0x680b8897:   85 00 eb e9 cc cc cc cc cc 8b ff 55 8b ec 68 c0
+0x680b88a7:   88 0b 68 e8 11 29 00 00 83 c4 04 a3 34 7b 0e 68 
+
+
+Register to memory mapping:
+
+EAX=0x02a80000 is an unknown value
+EBX=0x00000000 is an unknown value
+ECX=0x02a67210 is an unknown value
+EDX=0x00000007 is an unknown value
+ESP=0x02aa5d98 is pointing into the stack for thread: 0x00edc800
+EBP=0x02aa5da0 is pointing into the stack for thread: 0x00edc800
+ESI=0x00000000 is an unknown value
+EDI=0x02acfae8 is pointing into the stack for thread: 0x00edc800
+
+
+Stack: [0x02a80000,0x02ad0000],  sp=0x02aa5d98,  free space=151k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [Basic188.dll+0x18897]
+C  [Basic188.dll+0x3a7a]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  UHF.Reader188.Inventory_G2([I)[I+0
+j  test.main([Ljava/lang/String;)V+157
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x02cee400 JavaThread "Service Thread" daemon [_thread_blocked, id=11612, stack(0x16ef0000,0x16f40000)]
+  0x161de000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=13268, stack(0x16e60000,0x16eb0000)]
+  0x02ced400 JavaThread "org.jacoco.agent.rt.internal_1f1cc91.output.TcpClientOutput" daemon [_thread_in_native, id=13288, stack(0x16dd0000,0x16e20000)]
+  0x02cef000 JavaThread "Attach Listener" daemon [_thread_blocked, id=3136, stack(0x15ba0000,0x15bf0000)]
+  0x02cec400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10092, stack(0x15b10000,0x15b60000)]
+  0x02c7c800 JavaThread "Finalizer" daemon [_thread_blocked, id=11744, stack(0x15a80000,0x15ad0000)]
+  0x02c76800 JavaThread "Reference Handler" daemon [_thread_blocked, id=11080, stack(0x14fc0000,0x15010000)]
+=>0x00edc800 JavaThread "main" [_thread_in_native, id=4388, stack(0x02a80000,0x02ad0000)]
+
+Other Threads:
+  0x02c75000 VMThread [stack: 0x14f30000,0x14f80000] [id=12512]
+  0x161f4400 WatcherThread [stack: 0x16f80000,0x16fd0000] [id=14660]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ def new generation   total 4928K, used 2490K [0x04e00000, 0x05350000, 0x0a350000)
+  eden space 4416K,  44% used [0x04e00000, 0x04feeb48, 0x05250000)
+  from space 512K, 100% used [0x052d0000, 0x05350000, 0x05350000)
+  to   space 512K,   0% used [0x05250000, 0x05250000, 0x052d0000)
+ tenured generation   total 10944K, used 864K [0x0a350000, 0x0ae00000, 0x14e00000)
+   the space 10944K,   7% used [0x0a350000, 0x0a4281d0, 0x0a428200, 0x0ae00000)
+ Metaspace       used 1053K, capacity 2666K, committed 2752K, reserved 4480K
+
+Card table byte_map: [0x14e00000,0x14e90000] byte_map_base: 0x14dd9000
+
+Polling page: 0x00b00000
+
+CodeCache: size=32768Kb used=740Kb max_used=740Kb free=32027Kb
+ bounds [0x02d50000, 0x02e10000, 0x04d50000]
+ total_blobs=211 nmethods=63 adapters=80
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.345 Thread 0x161de000   59             java.util.HashMap::getNode (148 bytes)
+Event: 0.345 Thread 0x161de000 nmethod 59 0x02e07808 code [0x02e07940, 0x02e07b74]
+Event: 0.348 Thread 0x161de000   60             java.util.Arrays::equals (54 bytes)
+Event: 0.349 Thread 0x161de000 nmethod 60 0x02e07d88 code [0x02e07e90, 0x02e07fc0]
+Event: 0.351 Thread 0x161de000   61  s          java.lang.StringBuffer::append (13 bytes)
+Event: 0.351 Thread 0x161de000 nmethod 61 0x02e08088 code [0x02e08190, 0x02e083cc]
+Event: 0.393 Thread 0x161de000   62   !         sun.misc.URLClassPath$JarLoader::getResource (85 bytes)
+Event: 0.394 Thread 0x161de000 nmethod 62 0x02e08548 code [0x02e086c0, 0x02e08b14]
+Event: 0.394 Thread 0x161de000   63             org.jacoco.agent.rt.internal_1f1cc91.core.internal.data.CRC64::update (20 bytes)
+Event: 0.394 Thread 0x161de000 nmethod 63 0x02e08f88 code [0x02e09080, 0x02e09140]
+
+GC Heap History (2 events):
+Event: 0.268 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 4928K, used 4416K [0x04e00000, 0x05350000, 0x0a350000)
+  eden space 4416K, 100% used [0x04e00000, 0x05250000, 0x05250000)
+  from space 512K,   0% used [0x05250000, 0x05250000, 0x052d0000)
+  to   space 512K,   0% used [0x052d0000, 0x052d0000, 0x05350000)
+ tenured generation   total 10944K, used 0K [0x0a350000, 0x0ae00000, 0x14e00000)
+   the space 10944K,   0% used [0x0a350000, 0x0a350000, 0x0a350200, 0x0ae00000)
+ Metaspace       used 775K, capacity 2410K, committed 2496K, reserved 4480K
+Event: 0.270 GC heap after
+Heap after GC invocations=1 (full 0):
+ def new generation   total 4928K, used 512K [0x04e00000, 0x05350000, 0x0a350000)
+  eden space 4416K,   0% used [0x04e00000, 0x04e00000, 0x05250000)
+  from space 512K, 100% used [0x052d0000, 0x05350000, 0x05350000)
+  to   space 512K,   0% used [0x05250000, 0x05250000, 0x052d0000)
+ tenured generation   total 10944K, used 864K [0x0a350000, 0x0ae00000, 0x14e00000)
+   the space 10944K,   7% used [0x0a350000, 0x0a4281d0, 0x0a428200, 0x0ae00000)
+ Metaspace       used 775K, capacity 2410K, committed 2496K, reserved 4480K
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 0.343 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04f9eba8) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.344 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fa5e68) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.345 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fad038) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.345 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fb13c0) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.345 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fb8790) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.348 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fc37a8) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.348 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fc85b0) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.350 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fce800) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.350 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fd3c20) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+Event: 0.393 Thread 0x00edc800 Exception <a 'java/security/PrivilegedActionException'> (0x04fdaac8) thrown at [D:\re\workspace\8-2-build-windows-i586-cygwin\jdk8u20\1074\hotspot\src\share\vm\prims\jvm.cpp, line 1275]
+
+Events (10 events):
+Event: 0.348 loading class org/jacoco/agent/rt/internal_1f1cc91/core/internal/flow/FrameSnapshot
+Event: 0.348 loading class org/jacoco/agent/rt/internal_1f1cc91/core/internal/flow/FrameSnapshot done
+Event: 0.348 loading class org/jacoco/agent/rt/internal_1f1cc91/core/internal/flow/IFrame
+Event: 0.348 loading class org/jacoco/agent/rt/internal_1f1cc91/core/internal/flow/IFrame done
+Event: 0.350 loading class org/jacoco/agent/rt/internal_1f1cc91/asm/Handler
+Event: 0.350 loading class org/jacoco/agent/rt/internal_1f1cc91/asm/Handler done
+Event: 0.350 loading class org/jacoco/agent/rt/internal_1f1cc91/core/data/ExecutionData
+Event: 0.350 loading class org/jacoco/agent/rt/internal_1f1cc91/core/data/ExecutionData done
+Event: 0.393 loading class UHF/Reader188
+Event: 0.393 loading class UHF/Reader188 done
+
+
+Dynamic libraries:
+0x00b10000 - 0x00b40000 	C:\Program Files (x86)\Java\jdk1.8.0_20\bin\javaw.exe
+0x77aa0000 - 0x77c3a000 	C:\Windows\SYSTEM32\ntdll.dll
+0x755d0000 - 0x756b0000 	C:\Windows\System32\KERNEL32.DLL
+0x77380000 - 0x7757f000 	C:\Windows\System32\KERNELBASE.dll
+0x776a0000 - 0x77719000 	C:\Windows\System32\ADVAPI32.dll
+0x758f0000 - 0x759af000 	C:\Windows\System32\msvcrt.dll
+0x77110000 - 0x77186000 	C:\Windows\System32\sechost.dll
+0x75d60000 - 0x75e1b000 	C:\Windows\System32\RPCRT4.dll
+0x75260000 - 0x75285000 	C:\Windows\System32\SspiCli.dll
+0x75250000 - 0x7525a000 	C:\Windows\System32\CRYPTBASE.dll
+0x77a10000 - 0x77a70000 	C:\Windows\System32\bcryptPrimitives.dll
+0x771e0000 - 0x77378000 	C:\Windows\System32\USER32.dll
+0x755b0000 - 0x755c7000 	C:\Windows\System32\win32u.dll
+0x75fd0000 - 0x75ff1000 	C:\Windows\System32\GDI32.dll
+0x759c0000 - 0x75b1d000 	C:\Windows\System32\gdi32full.dll
+0x756b0000 - 0x7572c000 	C:\Windows\System32\msvcp_win.dll
+0x765c0000 - 0x766e0000 	C:\Windows\System32\ucrtbase.dll
+0x70db0000 - 0x70fbf000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1440_none_e62af690f8dab76d\COMCTL32.dll
+0x752f0000 - 0x75567000 	C:\Windows\System32\combase.dll
+0x766e0000 - 0x76705000 	C:\Windows\System32\IMM32.DLL
+0x6a010000 - 0x6a0cf000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\msvcr100.dll
+0x69190000 - 0x69532000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\client\jvm.dll
+0x75b20000 - 0x75b26000 	C:\Windows\System32\PSAPI.DLL
+0x750d0000 - 0x750f4000 	C:\Windows\SYSTEM32\WINMM.dll
+0x70630000 - 0x70638000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x75290000 - 0x752ee000 	C:\Windows\System32\WS2_32.dll
+0x74c10000 - 0x74c33000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x75570000 - 0x755ab000 	C:\Windows\System32\cfgmgr32.dll
+0x704b0000 - 0x704bc000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\verify.dll
+0x69fe0000 - 0x6a001000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\java.dll
+0x6ecc0000 - 0x6ece0000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\instrument.dll
+0x6ec10000 - 0x6ec23000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\zip.dll
+0x76740000 - 0x76cbb000 	C:\Windows\System32\SHELL32.dll
+0x75f40000 - 0x75fc3000 	C:\Windows\System32\shcore.dll
+0x76000000 - 0x765bf000 	C:\Windows\System32\windows.storage.dll
+0x76710000 - 0x76727000 	C:\Windows\System32\profapi.dll
+0x75730000 - 0x75773000 	C:\Windows\System32\powrprof.dll
+0x75e20000 - 0x75e2d000 	C:\Windows\System32\UMPDC.dll
+0x77190000 - 0x771d4000 	C:\Windows\System32\shlwapi.dll
+0x75d50000 - 0x75d5f000 	C:\Windows\System32\kernel.appcore.dll
+0x77580000 - 0x77593000 	C:\Windows\System32\cryptsp.dll
+0x69fc0000 - 0x69fd4000 	C:\Program Files (x86)\Java\jdk1.8.0_20\jre\bin\net.dll
+0x72290000 - 0x7231c000 	C:\Windows\system32\DolphinQLSP.dll
+0x77800000 - 0x77901000 	C:\Windows\System32\CRYPT32.dll
+0x759b0000 - 0x759be000 	C:\Windows\System32\MSASN1.dll
+0x72230000 - 0x72282000 	C:\Windows\SYSTEM32\MSWSOCK.dll
+0x75100000 - 0x75132000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x72180000 - 0x72187000 	C:\Windows\system32\wshqos.dll
+0x72170000 - 0x72177000 	C:\Windows\SYSTEM32\wshtcpip.DLL
+0x72090000 - 0x72097000 	C:\Windows\SYSTEM32\wship6.dll
+0x71f50000 - 0x71f61000 	C:\Windows\system32\napinsp.dll
+0x71f30000 - 0x71f46000 	C:\Windows\system32\pnrpnsp.dll
+0x72ef0000 - 0x72f83000 	C:\Windows\SYSTEM32\DNSAPI.dll
+0x75d40000 - 0x75d47000 	C:\Windows\System32\NSI.dll
+0x71f20000 - 0x71f2b000 	C:\Windows\System32\winrnr.dll
+0x71f00000 - 0x71f16000 	C:\Windows\system32\NLAapi.dll
+0x71ef0000 - 0x71f00000 	C:\Windows\system32\wshbth.dll
+0x71ee0000 - 0x71ee8000 	C:\Windows\System32\rasadhlp.dll
+0x71e80000 - 0x71ed1000 	C:\Windows\System32\fwpuclnt.dll
+0x77a70000 - 0x77a89000 	C:\Windows\System32\bcrypt.dll
+0x16fd0000 - 0x1700d000 	D:\jsp\testuhf\UHF_Reader188.dll
+0x680a0000 - 0x68c19000 	D:\jsp\testuhf\Basic188.dll
+0x726c0000 - 0x7284f000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -javaagent:D:\eclipse\eclipse-jee-2019-06-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\925\0\.cp\jacocoagent.jar=includes=*,excludes=,exclclassloader=sun.reflect.DelegatingClassLoader,output=tcpclient,port=27827 -Dfile.encoding=GBK 
+java_command: test
+java_class_path (initial): D:\jsp\testuhf\bin;D:\eclipse\eclipse-jee-2019-06-R-win32-x86_64\eclipse\configuration\org.eclipse.osgi\925\0\.cp\jacocoagent.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_261
+CLASSPATH=.;C:\Program Files\Java\jdk1.8.0_261\lib\dt.jar;C:\Program Files\Java\jdk1.8.0_261\lib\tools.jar
+PATH=C:/Program Files/Java/jdk1.8.0_261/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_261/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_261/bin/../jre/lib/amd64;.;C:\Program Files\Java\jdk1.8.0_261\bin;";C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\matlab\runtime\win64;D:\matlab\bin;D:\matlab\polyspace\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\node\";D:\idea\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;C:\Windows\System32;C:\Users\dell\AppData\Roaming\npm;D:\idea\IntelliJ IDEA Community Edition 2020.3.3\bin;;D:\eclipse\eclipse-jee-2019-06-R-win32-x86_64\eclipse;
+USERNAME=dell
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 158 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8178460k(3263720k free), swap 17091356k(9971136k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.20-b23) for windows-x86 JRE (1.8.0_20-b26), built on Jul 30 2014 18:14:41 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Apr 12 13:38:48 2021
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

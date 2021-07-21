@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="30sp"
+            android:layout_weight="2"
+            android:src="@drawable/returnback"
+            android:layout_gravity="center"
+            android:gravity="left"/>
+        <TextView
+            android:layout_marginLeft="-50sp"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="设备详情"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="待处理"
+            android:textSize="25sp"
+            tools:ignore="Suspicious0dp"
+            android:textColor="#4E59C4"
+            />
+
+        <TextView
+            android:id="@+id/inuse"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="使用中"
+            android:textSize="25sp"
+            android:layout_weight="2"
+            tools:ignore="Suspicious0dp"
+            />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="已归还"
+            android:textSize="25sp"
+            android:layout_weight="2"
+            tools:ignore="Suspicious0dp"
+            />
+    </LinearLayout>
+
+    //图片与大框架
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="225dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="341dp"
+            android:layout_height="172dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/mache2" />
+
+
+            //文字
+
+            <LinearLayout
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                //标题文字
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="20sp"
+
+                        android:text="齐心加厚订书机"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/button_style3"
+                        android:gravity="center"
+                        android:text="代借"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="设备编号:1093"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="设备位置:10-19-3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="代借人:2019123 陈泽闻"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="原借人:2019115 王晓玥"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="借用天数:1天"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                //详情图标
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EEEEF0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style2"
+                android:text="待审批"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="250dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    //设备
+
+    //图片与大框架
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_style"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="341dp"
+            android:layout_height="148dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="80px"
+                android:background="@drawable/mache1" />
+
+
+            //文字
+
+            <LinearLayout
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                //标题文字
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30sp"
+                        android:layout_marginLeft="20sp"
+                        android:text="梳式文本装订机"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/button_style3"
+                        android:gravity="center"
+                        android:text="转借"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="设备编号:1092"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="设备位置:10-19-3"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="228dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="转借人:2019135 谭松"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="205dp"
+                        android:layout_height="wrap_content"
+
+                        android:text="借用天数:4天"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+                //详情图标
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EEEEF0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accept1"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style5"
+                android:text="同意"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="160dp"/>
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_style6"
+                android:text="拒绝"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

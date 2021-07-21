@@ -1,0 +1,17 @@
+请将文件放置在非中文路径！！！
+
+1、Manage 包为管理端，入口为Manage\fwwb\WebContent\html\index.jsp
+
+2、CabinetDemo 为自助机，入口及部署请观看CabinetDemo下Readme.txt
+
+3、Android apk 在AndroidAPK文件夹中，点击下载安装即可
+
+4、APP 为Android项目工程文件
+
+5、Database 为数据库文件
+
+6、RFIDTest为rfid测试demo，入口为src下test.java
+
+7、Message 为短信收发demo
+
+8、IDCardReader 为身份证读取demo
